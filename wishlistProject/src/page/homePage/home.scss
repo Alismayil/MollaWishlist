@@ -1,0 +1,237 @@
+.mainRightBox {
+    min-height: 93vh;
+  
+    .cardsBox {
+        min-height: 100%;
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .card {
+
+            .cardImg {
+                position: relative;
+    
+                .cardHover {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: 0.7s;
+    
+                    .cardHoverUp {
+                        width: 100%;
+                        height: 85%;
+                        display: flex;
+                        justify-content: end;
+    
+                        .HoverBtns {
+                            height: 70%;
+                            width: 20%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            
+                            .wishlistBtn {
+                                background-color: white;
+                                color: #c96;
+                                height: 20%;
+                                width: 60%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transform: translate(0px);
+                                transition: 0.7s;
+                                position: relative;
+                                z-index: 999;
+                                border-bottom-right-radius: 20px;
+                                border-top-left-radius: 20px;
+                                .wishlistBackBox{
+                                    right: 0;
+                                    position: absolute;
+                                    height: 100%;
+                                    width: 100%;
+                                    top: 0;
+                                    z-index: -1;
+                                    transition: 0.7s;
+                                    display: flex;
+                                    justify-content: start;
+                                    align-items: center;
+                                    padding: 0px 10px;
+                                    border-bottom-right-radius: 20px;
+                                    border-top-left-radius: 20px;
+                                    p{
+                                    transition: 0.7s;
+                                        
+                                    opacity: 0;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            .wishlistBtn:hover{
+                                background-color: #b87145;
+                                color: white;
+                                cursor: pointer;
+                                .wishlistBackBox{
+                                    background-color: #b87145;
+                                    width: 350%;
+                                    transition: 0.7s;
+                                    
+                                    p{
+                                    transition: 0.7s;
+                                        color: white;
+                                        opacity: 1;
+                                    }
+                                    
+                                }
+                            }
+                            .otherBtn {
+                                background-color: white;
+                                color: #c96;
+                                height: 20%;
+                                width: 60%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transform: translate(0px);
+                                transition: 0.7s;
+                                border-bottom-right-radius: 20px;
+                                border-top-left-radius: 20px;
+                            }
+                            .otherBtn:hover{
+                                background-color: #b87145;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+    
+                    .cardHoverDown {
+                        background-color: white;
+                        color: #c96;
+                        width: 100%;
+                        height: 15%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateY(10px);
+                        transition: 0.7s;
+                    border-bottom-right-radius: 50px;
+
+                    }
+                    .cardHoverDown:hover{
+                        background-color: #b87145;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+    
+                .status{
+                    
+                    
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+
+                    .new{
+                        padding: 10px 15px;
+                        background-color: #a6c76c;
+                        border-bottom-right-radius: 20px;
+                        border-top-left-radius: 20px;
+                    }
+                    .top{
+                        padding: 10px 20px;
+                        background-color: #7dd2ea;
+                        border-bottom-right-radius: 20px;
+                        border-top-left-radius: 20px;
+                    }
+                    .stock{
+                        padding: 10px 22px;
+                        font-size: 15px ;
+                        background-color: #ccc;
+                        border-bottom-right-radius: 20px;
+                        border-top-left-radius: 20px;
+                    }
+                }
+    
+    
+                img {
+                    width: 100%;
+                    border-bottom-right-radius: 50px;
+                    border-top-left-radius: 50px;
+                }
+            }
+    
+            .cardImg:hover {
+    
+                .cardHover {
+                    transition: 0.7s;
+                    opacity: 1;
+    
+                    .cardHoverUp {
+    
+                        .HoverBtns {
+                            .wishlistBtn {
+                                transition: 0.7s;
+                                transform: translate(-20px);
+    
+                            }
+                            .otherBtn{
+                                transition: 0.7s;
+                                transform: translate(-20px);
+    
+                            }
+                        }
+                    }
+                    .cardHoverDown{
+                        transform: translateY(0px);
+                        transition: 0.7s;
+                    }
+                
+    
+    
+                }
+            }
+    
+            .cardText {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0px;
+    
+                p {
+                    height: 20px;
+                }
+    
+                .category {
+                    color: gray;
+                }
+    
+                .name {
+                    margin-top: 10px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+    
+                .price {
+                    margin-top: 30px;
+                    color: brown;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+    
+}
